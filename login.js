@@ -12,7 +12,7 @@ function home() {
         return;
     }
 
-        if (!email.includes("@.com")) {
+        if (!email.includes("@gmail.com")) {
         mensagem.innerText = "Digite um email válido com @.com";
         mensagem.classList.add("mostrar");
         return;
