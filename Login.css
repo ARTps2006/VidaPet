@@ -20,7 +20,7 @@ body {
 }
 
 .c {
-  border: #1B5E20 solid 2px;
+  border: #BFBF5E solid 2px;
   border-radius: 8px;
   background-color: white;
   padding: 40px 60px;
@@ -31,7 +31,7 @@ body {
 
 .c h2 {
   text-align: center;
-  color: #2E7D32;
+  color: #D56B1D;
   margin-bottom: 25px;
 }
 
@@ -39,22 +39,22 @@ body {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #BFBF5E;
   border-radius: 5px;
   outline: none;
   transition: 0.3s;
 }
 
 .c input:focus {
-  border-color: #2E7D32;
-  box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+  border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
 }
 
 .c button {
   width: 106%;
   padding: 12px;
   margin-top: 20px;
-  background-color: #2E7D32;
+  background-color: #A0AA60;
   color: white;
   border: none;
   border-radius: 5px;
@@ -64,7 +64,7 @@ body {
 }
 
 .c button:hover {
-  background-color: #1B5E20;
+  background-color: #58692E;
 }
 
 .c a {
@@ -72,7 +72,7 @@ body {
   margin-top: 15px;
   margin-left: 5px;
   text-align: center;
-  color: #1B5E20;
+  color: #D56B1D;
   text-decoration: none;
   font-weight: bold;
 }
@@ -125,4 +125,3 @@ img {
   max-width: 80%;
   height: auto;
 }
-
