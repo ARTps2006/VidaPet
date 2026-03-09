@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css">
-    <title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+
+<link rel="stylesheet" href="cadastro.css">
+
 </head>
+
 <body>
 
-    <!-- Lado esquerdo -->
-    <div class="container">
+<div class="container">
 
-        <div class="lado-esquerdo">
-            <form class="c">
-                <h2>Cadastro</h2>
+<!-- Lado esquerdo -->
+<div class="lado-esquerdo">
 
-                <input type="name" id="nome" placeholder="Nome:">
+<form class="c">
 
-                <input type="email" id="email" placeholder="Email:">
-               
-                <input type="password" id="senha" placeholder="Senha:">
+<h2>Cadastro</h2>
 
-                <button type="button">Cadastrar</button>
+<input type="text" id="nome" placeholder="Nome:">
 
-                 <p class="m" id="mensagemErro"></p>
-            </form>
+<input type="text" id="usuario" placeholder="Usuário:">
 
-        </div>
-        
-        <!-- Lado direito -->
-        <div class="lado-direito">
-            <img src="">
-        </div>
+<input type="email" id="email" placeholder="Email:">
 
-    </div>
+<input type="tel" id="telefone" placeholder="Telefone:" maxlength="11">
+
+<input type="password" id="senha" placeholder="Senha:">
+
+<input type="password" id="confirmarSenha" placeholder="Confirmar Senha:">
+
+<button type="button" onclick="cadastrar()">Cadastrar</button>
+
+<div class="linkC">
+
+    <p>Já tem uma conta?</p>
+
+    <a href="login.html">Entrar</a>
+</div>
+<p class="m" id="mensagemErro"></p>
+<p class="s" id="mensagemSucesso"></p>
+</form>
+
+</div>
+
+
+<!-- Lado direito -->
+<div class="lado-direito">
+
+<img src="">
+
+</div>
+
+</div>
+
+<script src="cadastro.js"></script>
 
 </body>
-<script src="cadastro.js"></script>
 </html>
