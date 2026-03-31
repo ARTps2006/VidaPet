@@ -1,20 +1,20 @@
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+    background: #f5f5f5;
+}
 
 header{
     position:fixed;
     top:0;
     width:100%;
   }
-
 .menu{
     display:flex;
     justify-content:space-between;
     align-items: flex-end;
     background: linear-gradient(135deg, #BFBF5E, #58692E);
-    padding:15px 550px;
+    padding:15px 40px;
   }
    
 .logo{
@@ -39,75 +39,92 @@ header{
     color:#D56B1D;
   }
 
-  .container {
-  display: flex;
-  height: 100vh;
+  .perfil{
+    background:white;
+    border:none;
+    padding: 10px 13px;
+    margin-bottom: 10px;
+    border-radius:90px;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  
+  .perfil:hover{
+    background:#D56B1D;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px;
 }
 
 .c {
-  border: #BFBF5E solid 2px;
-  border-radius: 8px;
-  background-color: white;
-  padding: 40px 60px;
-  margin-top: 50px;
-  margin-bottom: 15%;
-  margin-left: 38%;
-  width: 300px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: #BFBF5E solid 2px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 40px;
+    width: 320px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .c h2 {
-  text-align: center;
-  color: #D56B1D;
-  margin-bottom: 25px;
+    text-align: center;
+    color: #D56B1D;
+    margin-bottom: 25px;
 }
 
+.c label {
+    color: #D56B1D;
+    font-weight: bold;
+}
+
+/* INPUTS */
 .c input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #BFBF5E;
-  border-radius: 5px;
-  outline: none;
-  transition: 0.3s;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #BFBF5E;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
 }
 
 .c input:focus {
-  border-color: #D56B1D;
-  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
+    border-color: #D56B1D;
+    box-shadow: 0 0 5px rgba(160,170,96,0.4);
 }
 
+/* BOTÃO */
 .c button {
-  width: 106%;
-  padding: 12px;
-  margin-top: 20px;
-  background-color: #A0AA60;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
+    width: 100%;
+    padding: 12px;
+    background-color: #A0AA60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .c button:hover {
-  background-color: #58692E;
+    background-color: #58692E;
 }
 
 .c a {
-  display: block;
-  margin-top: 15px;
-  margin-left: 5px;
-  text-align: center;
-  color: #D56B1D;
-  text-decoration: none;
-  font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #D56B1D;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .c a:hover {
-  text-decoration: underline;
-}
-
-.c label{
-      color: #D56B1D;
+    text-decoration: underline;
 }

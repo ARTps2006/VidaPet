@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="perfil.css">
 </head>
 <body>
-    <header>
+
+ <header>
         <nav class="menu">  
             <div class="logo"><img src=""></div>  
           <ul class="menuLinks">
@@ -18,31 +19,37 @@
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contatos.html">Contato</a></li>
           </ul>
+
+          <button onclick="perfil()" class="perfil"><img src="person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" ></button>
+
         </nav>
+      </header>
 
-<div class="container">
+<main>
+    <div class="container">
+        <form class="c">
+            <h2>Perfil</h2>
 
-<form class="c">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
-<h2>Perfil</h2>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 
-<label for="nome">Nome:</label>
-<input type="text" id="nome">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
 
-<label for="email">E-mail:</label>
-<input type="email" id="email">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
 
-<label for="tel">Telefone:</label>
-<input type="tel" id="telefone">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" id="data" name="data">
 
-<label for="Senha">Senha:</label>
-<input type="password" id="senha">
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </div>
+</main>
 
-<input type="date" id="data" placeholder="Data de nascimento">
-
-</div>
-</form>
-    </header>
 </body>
 <script src="perfil.js"></script>
 </html>

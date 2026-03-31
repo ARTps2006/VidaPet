@@ -1,43 +1,56 @@
 function cadastrar() {
+    const nome = document.getElementById("nome").value.trim();
+    const usuario = document.getElementById("usuario").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    const confirmarSenha = document.getElementById("confirmarSenha").value.trim();
 
-const nome = document.getElementById("nome");
-const usuario = document.getElementById("usuario");
-const email = document.getElementById("email");
-const telefone = document.getElementById("telefone");
-const senha = document.getElementById("senha");
-const confirmarSenha = document.getElementById("confirmarSenha");
+    const mensagemErro = document.getElementById("mensagemErro");
+    const mensagemSucesso = document.getElementById("mensagemSucesso");
 
-const mensagemErro = document.getElementById("mensagemErro");
-const mensagemSucesso = document.getElementById("mensagemSucesso");
+    mensagemErro.classList.remove("mostrar");
+    mensagemSucesso.classList.remove("mostrar");
 
-mensagemErro.classList.remove("mostrar");
-mensagemSucesso.classList.remove("mostrar");
+    // Validação de campos
+    if (!nome || !usuario || !email || !telefone || !senha || !confirmarSenha) {
+        mensagemErro.textContent = "Preencha todos os campos!";
+        mensagemErro.classList.add("mostrar");
+        return;
+    }
 
-if (nome.value === "" || usuario.value === "" || email.value === "" || telefone.value === "" || senha.value === "" || confirmarSenha.value === "") {
+    if (senha !== confirmarSenha) {
+        mensagemErro.textContent = "As senhas não são iguais!";
+        mensagemErro.classList.add("mostrar");
+        return;
+    }
 
-mensagemErro.textContent = "Preencha todos os campos!";
-mensagemErro.classList.add("mostrar");
-return;
+    if (senha.length < 6) {
+        mensagemErro.textContent = "A senha deve ter pelo menos 6 caracteres!";
+        mensagemErro.classList.add("mostrar");
+        return;
+    }
 
-}
+    // Recupera usuários existentes
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-if (senha.value !== confirmarSenha.value) {
+    // Verifica se já existe o usuário ou email
+    if (usuarios.some(u => u.usuario === usuario || u.email === email)) {
+        mensagemErro.textContent = "Usuário ou e-mail já cadastrado!";
+        mensagemErro.classList.add("mostrar");
+        return;
+    }
 
-mensagemErro.textContent = "As senhas não são iguais!";
-mensagemErro.classList.add("mostrar");
-return;
+    // Cria novo usuário
+    const novoUsuario = { nome, usuario, email, telefone, senha };
 
-}
+    usuarios.push(novoUsuario);
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-if (senha.value.length < 6) {
+    mensagemSucesso.textContent = "Cadastro realizado com sucesso! Redirecionando para login...";
+    mensagemSucesso.classList.add("mostrar");
 
-mensagemErro.textContent = "A senha deve ter pelo menos 6 caracteres!";
-mensagemErro.classList.add("mostrar");
-return;
-
-}
-
-mensagemSucesso.textContent = "Cadastro realizado com sucesso!";
-mensagemSucesso.classList.add("mostrar");
-
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 2000);
 }
