@@ -8,20 +8,21 @@ header{
     top:0;
     width:100%;
   }
-
-.menu{
-    display:flex;
-    justify-content:space-between;
-    align-items: flex-end;
-    background: linear-gradient(135deg, #BFBF5E, #58692E);
-    padding:15px 40px;
+  
+  .logo img {
+      width: 90px;
+      height: auto;
+      display: block;
   }
-   
-.logo{
-    color:white;
-    font-size:24px;
-    font-weight:bold;
+
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: linear-gradient(135deg, #BFBF5E, #58692E);
+    padding: 2px 20px;
 }
+
   .menuLinks{
     list-style:none;
     display:flex;
