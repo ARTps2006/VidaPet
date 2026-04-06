@@ -1,56 +1,76 @@
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-  }
-  
-  .logo img {
-      width: 90px;
-      height: auto;
-      display: block;
-  }
-
-.menu {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    background: linear-gradient(135deg, #BFBF5E, #58692E);
-    padding: 2px 20px;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-  .menuLinks{
-    list-style:none;
-    display:flex;
-    gap:25px;
-  }
-  
-  .menuLinks a{
-    text-decoration:none;
-    color:white;
-    font-size:16px;
-    transition:0.3s;
-  }
-  
-  .menuLinks a:hover{
-    color:#D56B1D;
-  }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  .perfil{
-    background:white;
-    border:none;
-    padding: 10px 13px;
-    margin-bottom: 10px;
-    border-radius:90px;
-    cursor:pointer;
-    transition:0.3s;
-  }
-  
-  .perfil:hover{
-    background:#D56B1D;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
+.logo img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #BFBF5E, #58692E);
+  padding: 2px 20px;
+}
+
+.menuLinks {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menuLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menuLinks a:hover {
+  color: #D56B1D;
+}
+
+.perfil {
+  background: white;
+  border: none;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.perfil:hover {
+  background: #D56B1D;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.sair {
+  background: white;
+  border: none;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sair:hover {
+  background: darkred;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Perfil_saida {
+  margin: 10px;
+}

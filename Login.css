@@ -81,32 +81,32 @@ body {
   text-decoration: underline;
 }
 
-.linkC{
-    display: flex;
-    flex-direction: row;
+.linkC {
+  display: flex;
+  flex-direction: row;
 
 }
 
 .m {
-    width: 100%;
-    text-align: center;
-    padding: 7px 9px;
-    margin-top: 5px;
-    background-color: #ffe6e6;
-    color: #c50202;
-    border-radius: 5px;
-    font-size: 0.9em;
-    opacity: 0;
-    transform: translateY(-10px);
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease;
+  width: 100%;
+  text-align: center;
+  padding: 7px 9px;
+  margin-top: 5px;
+  background-color: #ffe6e6;
+  color: #c50202;
+  border-radius: 5px;
+  font-size: 0.9em;
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease;
 }
 
 .m.mostrar {
-    opacity: 1;
-    transform: translateY(0);
-    max-height: 50px;
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 50px;
 }
 
 /* Lado direito */

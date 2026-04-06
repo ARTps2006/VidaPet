@@ -25,21 +25,28 @@ function salvarAlteracoes(event) {
         return;
     }
 
+    // Atualiza o objeto do usuário logado
     usuarioLogado.nome = nome;
     usuarioLogado.email = email;
     usuarioLogado.telefone = telefone;
     usuarioLogado.senha = senha;
     usuarioLogado.data = data;
 
+    // Salva o usuário logado atualizado
     localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
 
-    // Atualiza a lista de usuários
+    // Pega todos os usuários cadastrados
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    const index = usuarios.findIndex(u => u.usuario === usuarioLogado.usuario);
+
+    // Procura o usuário na lista
+    const index = usuarios.findIndex(u => u.email === usuarioLogado.email);
+
     if (index !== -1) {
         usuarios[index] = usuarioLogado;
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }
+
+    // Salva a lista atualizada
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
     alert("Alterações salvas com sucesso!");
 }

@@ -1,59 +1,60 @@
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-  }
-  
-  .logo img {
-      width: 90px;
-      height: auto;
-      display: block;
-  }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
 
 .menu {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(135deg, #BFBF5E, #58692E);
     padding: 2px 20px;
 }
 
-  .menuLinks{
-    list-style:none;
-    display:flex;
-    gap:25px;
-  }
-  
-  .menuLinks a{
-    text-decoration:none;
-    color:white;
-    font-size:16px;
-    transition:0.3s;
-  }
-  
-  .menuLinks a:hover{
-    color:#D56B1D;
-  }
+.menuLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
-  .perfil{
-    background:white;
-    border:none;
+.menuLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menuLinks a:hover {
+    color: #D56B1D;
+}
+
+.perfil {
+    background: white;
+    border: none;
     padding: 10px 13px;
     margin-bottom: 10px;
-    border-radius:90px;
-    cursor:pointer;
-    transition:0.3s;
-  }
-  
-  .perfil:hover{
-    background:#D56B1D;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perfil:hover {
+    background: #D56B1D;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -63,12 +64,13 @@ header{
 }
 
 .c {
+    margin-bottom: 60px;
     border: #BFBF5E solid 2px;
     border-radius: 8px;
     background-color: white;
     padding: 40px;
     width: 320px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .c h2 {
@@ -95,12 +97,12 @@ header{
 
 .c input:focus {
     border-color: #D56B1D;
-    box-shadow: 0 0 5px rgba(160,170,96,0.4);
+    box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
 }
 
-/* BOTÃO */
 .c button {
     width: 100%;
+    margin-left: 13px;
     padding: 12px;
     background-color: #A0AA60;
     color: white;
@@ -126,4 +128,23 @@ header{
 
 .c a:hover {
     text-decoration: underline;
+}
+
+.sair {
+    background: white;
+    border: none;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sair:hover {
+    background: darkred;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.Perfil_saida {
+    margin: 10px;
 }

@@ -35,6 +35,5 @@ function home() {
     // Salva usuário logado
     localStorage.setItem("usuarioLogado", JSON.stringify(usuarioEncontrado));
 
-    // Redireciona para home
     window.location.href = "home.html";
 }
