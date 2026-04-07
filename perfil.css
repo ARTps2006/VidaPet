@@ -10,9 +10,10 @@ header {
 }
 
 .logo img {
-    width: 90px;
-    height: auto;
-    display: block;
+  width: 90px;
+  margin-top: 20px;
+  height: auto;
+  display: block;
 }
 
 .menu {
@@ -44,8 +45,8 @@ header {
     background: white;
     border: none;
     padding: 10px 13px;
-    margin-bottom: 10px;
-    border-radius: 90px;
+  margin-bottom: 10px;
+  border-radius: 90px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -133,7 +134,7 @@ header {
 .sair {
     background: white;
     border: none;
-    padding: 10px 14px;
+    padding: 11px 13px;
     margin-bottom: 10px;
     border-radius: 90px;
     cursor: pointer;
