@@ -2,43 +2,144 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="home.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VidaPet</title>
+
+<link rel="stylesheet" href="home.css">
+
 </head>
 
 <body>
-  <header>
-    <nav class="menu">
-      <div class="logo"><img src="LogoMenu.png"></div>
-      <ul class="menuLinks">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="animais.html">Animais</a></li>
-        <li><a href="adotar.hmtl">Como Adotar</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contatos.html">Contato</a></li>
-      </ul>
-      <div class="Perfil_saida">
-        <button onclick="perfil()" class="perfil"><img src="person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"></button>
-        <button onclick="sair()" class="sair"><img src="sair.png"></button>
-      </div>
-    </nav>
-    <section class="hero">
-      <div class="conteudo-hero">
-        <h1>Adote um amigo e <br> transforme uma vida!</h1>
-        <p>
-          Somos a <strong>VidaPet</strong>, uma ONG dedicada ao resgate e proteção de gatos.<br>
-          Cuidamos de cada bichinho abandonado e ajudamos a encontrar lares <br>cheios de amor, promovendo uma adoção
-          responsável.
-        </p>
-        <button class="botao-acao">Descubra quem somos</button>
-      </div>
-    </section>
-  </header>
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="menu">
+
+<div class="logo">
+<img src="LogoMenu.png">
+</div>
+
+<ul class="menuLinks">
+<li><a href="home.html">Home</a></li>
+<li><a href="animais.html">Animais</a></li>
+<li><a href="adotar.html">Como Adotar</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="contatos.html">Contato</a></li>
+</ul>
+
+<div class="Perfil_saida">
+
+<button onclick="perfil()" class="perfil">
+<img src="person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+</button>
+
+<button onclick="sair()" class="sair">
+<img src="sair.png">
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="conteudo-hero">
+
+<h1>Adote um amigo e <br> transforme uma vida!</h1>
+
+<p>
+Somos a <strong>VidaPet</strong>, uma ONG dedicada ao resgate e proteção de gatos.
+Cuidamos de cada bichinho abandonado e ajudamos a encontrar lares
+cheios de amor.
+</p>
+
+<button class="botao-acao">
+Quem somos
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- CHAMADA PARA ADOÇÃO -->
+
+<section class="adocao-chamada">
+
+<div class="conteudo-adocao">
+
+<h2>Pronto para encontrar seu novo amigo?</h2>
+
+<p>
+Muitos <strong>animais</strong> estão esperando por um lar cheio de <strong>amor</strong>.
+Conheça todos os animais disponíveis e encontre o companheiro
+perfeito para sua família.
+</p>
+
+<button class="botao-adotar">
+Animais
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- IMPACTO -->
+<section class="impacto">
+
+<h2>Nosso Impacto</h2>
+
+<div class="grafico-container">
+<canvas id="graficoImpacto"></canvas>
+</div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer class="rodape">
+
+<div class="rodape-conteudo">
+
+<div>
+<h3>VidaPet</h3>
+<p>ONG dedicada ao resgate e adoção de gatos.</p>
+</div>
+
+<div>
+<h3>Contato</h3>
+<p>Email: contato@vidapet.com</p>
+<p>Telefone: (11) 99999-9999</p>
+</div>
+
+<div>
+<h3>Redes sociais</h3>
+<p>Instagram</p>
+<p>Facebook</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 VidaPet
+</p>
+
+</footer>
 
 </body>
-<script src="home.js"></script>
 
+<script src="home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="grafico.js"></script>
 </html>
