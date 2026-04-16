@@ -162,7 +162,7 @@ color:#58692E;
 /* ADOÇÃO */
 
 .adocao-chamada{
-margin-left: 30px;
+margin-left: 20px;
 margin-top:100px;
 padding:100px 60px;
 background:white;
@@ -299,4 +299,146 @@ margin-bottom:10px;
 text-align:center;
 margin-top:20px;
 color:#aaa;
+}
+
+
+/* ANIMAIS DESTAQUE */
+
+.animais-destaque{
+padding:80px 20px;
+text-align:center;
+}
+
+.animais-destaque h2{
+font-size:40px;
+color:#D56B1D;
+margin-bottom:40px;
+}
+
+.cards-animais{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card-animal{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+width:250px;
+transition:0.3s;
+}
+
+.card-animal:hover{
+transform:translateY(-10px);
+}
+
+.card-animal img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.card-animal button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+background:#58692E;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+/* COMO ADOTAR */
+
+.como-adotar{
+background:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.passos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.passo{
+background:#f5f5f5;
+padding:30px;
+border-radius:15px;
+width:200px;
+}
+
+.passo h3{
+font-size:40px;
+color:#D56B1D;
+}
+
+
+/* DEPOIMENTOS */
+
+.depoimentos{
+padding:80px 20px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.depoimentos h2{
+font-size:40px;
+color:#D56B1D;
+margin-bottom:40px;
+}
+
+.depoimentos-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.depoimento{
+max-width:400px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* IMPACTO */
+
+.impacto{
+background:linear-gradient(135deg,#BFBF5E,#58692E,#D56B1D);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.impacto h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.impacto-numeros{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.impacto-item{
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:15px;
+width:200px;
+}
+
+.impacto-item h3{
+font-size:40px;
+margin-bottom:10px;
 }
