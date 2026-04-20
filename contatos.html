@@ -2,18 +2,18 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VidaPet</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="logo VidaPet.png">
-    <link rel="stylesheet" href="perfil.css">
+    <title>Contato - VidaPet</title>
+
+    <link rel="icon" href="LogoMenu.png">
+    <link rel="stylesheet" href="contatos.css">
 
 </head>
 
 <body>
-
-    <!-- HEADER -->
 
     <header>
 
@@ -47,30 +47,62 @@
 
     </header>
 
+
     <main>
-        <div class="container">
 
-            <form class="c" onsubmit="salvarAlteracoes(event)">
-                <h2>Perfil</h2>
+        <section class="contato">
 
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <h1>Entre em Contato</h1>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            <p class="descricao">
+                Tem alguma dúvida sobre adoção ou quer ajudar nossa ONG?
+                Envie uma mensagem para nós!
+            </p>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+            <div class="contato-container">
 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <!-- FORMULÁRIO -->
 
-                <label for="data">Data de Nascimento</label>
-                <input type="date" id="data" name="data">
+                <form class="form-contato">
 
-                <button class="botao" type="submit">Salvar</button>
-            </form>
-        </div>
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Digite seu email">
+
+                    <label>Mensagem</label>
+                    <textarea placeholder="Digite sua mensagem"></textarea>
+
+                    <button class="botao-mensagem">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="info-contato">
+
+                    <h3>Informações</h3>
+
+                    <p><strong>Email:</strong> contato@vidapet.com</p>
+                    <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                    <p><strong>Local:</strong> São Paulo - GRU</p>
+
+                    <h3>Redes sociais</h3>
+
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>WhatsApp</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <!-- RODAPÉ -->
@@ -105,6 +137,5 @@
     </footer>
 
 </body>
-<script src="perfil.js"></script>
 
 </html>

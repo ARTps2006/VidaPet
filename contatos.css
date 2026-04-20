@@ -77,105 +77,6 @@ header {
   background: darkred;
 }
 
-.container {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding-top: 80px;
-}
-
-.c {
-  margin-bottom: 60px;
-  border: #BFBF5E solid 2px;
-  border-radius: 8px;
-  background-color: white;
-  padding: 40px;
-  width: 320px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.c h2 {
-  text-align: center;
-  color: #D56B1D;
-  margin-bottom: 25px;
-}
-
-.c label {
-  color: #D56B1D;
-  font-weight: bold;
-}
-
-.c input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #BFBF5E;
-  border-radius: 5px;
-  outline: none;
-  transition: 0.3s;
-}
-
-.c input:focus {
-  border-color: #D56B1D;
-  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
-}
-
-.botao {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: 30%;
-  margin-bottom: 0px;
-  font-size: 20px;
-  padding: 12px 40px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(135deg, #D56B1D, #d08c5c);
-  color: white;
-  font-weight: bold;
-
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
-
-  position: relative;
-  overflow: hidden;
-}
-
-/* efeito ao passar mouse */
-.botao:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-}
-
-/* clique */
-.botao:active {
-  transform: scale(0.95);
-}
-
-/* brilho animado */
-
-.botao::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent);
-  transition: all 0.6s;
-}
-
-.botao:hover::before {
-  left: 100%;
-}
-
 /* RODAPÉ */
 
 .rodape {
@@ -199,4 +100,149 @@ header {
   text-align: center;
   margin-top: 20px;
   color: #aaa;
+}
+
+.botao-mensagem {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #D56B1D, #d08c5c);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* efeito ao passar mouse */
+.botao-mensagem:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* clique */
+.botao-mensagem:active {
+  transform: scale(0.95);
+}
+
+/* animação do ícone */
+.botao-mensagem:hover .icone {
+  transform: rotate(-20deg) scale(1.2);
+}
+
+/* brilho animado */
+
+.botao-mensagem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transition: all 0.6s;
+}
+
+.botao-mensagem:hover::before {
+  left: 100%;
+}
+
+
+
+/* CONTAINER */
+
+.contato {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.contato h1 {
+  font-size: 45px;
+  color: #D56B1D;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+
+/* CONTAINER FLEX */
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+
+/* FORM */
+
+.form-contato {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.form-contato label {
+  color: #D56B1D;
+  font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #BFBF5E;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+
+/* INFO CONTATO */
+
+.info-contato {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.info-contato h3 {
+  color: #D56B1D;
+  margin-bottom: 10px;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+  margin-top: 80px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
