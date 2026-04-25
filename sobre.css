@@ -113,15 +113,21 @@ header {
   padding-top: 120px;
   text-align: center;
   padding-bottom: 40px;
+
+  margin: 0;
+  background-image: url("patas.png");
+  background-repeat: repeat;
+  background-size: 120px;
+  opacity: 0.98;
 }
 
 .sobre h1 {
   font-size: 65px;
-  color: white;
+  color: #e66a1f;
 }
 
 .descricao {
-  color: white;
+  color: #e66a1f;
   width: 60%;
   margin: auto;
   font-size: 18px;
