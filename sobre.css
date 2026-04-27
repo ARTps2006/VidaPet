@@ -123,11 +123,11 @@ header {
 
 .sobre h1 {
   font-size: 65px;
-  color: #e66a1f;
+  color: #FFC107;
 }
 
 .descricao {
-  color: #e66a1f;
+  color: #FFC107;
   width: 60%;
   margin: auto;
   font-size: 18px;
@@ -158,7 +158,7 @@ header {
 }
 
 .historia-texto h2 {
-  color: #D56B1D;
+  color: #FFC107;
   margin-bottom: 20px;
 }
 

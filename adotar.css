@@ -4,7 +4,6 @@ body {
   background: #f5f5f5;
 }
 
-/* HEADER */
 
 header {
   position: fixed;
@@ -105,15 +104,19 @@ header {
 }
 
 .conteudo-hero strong {
-  color: #58692E;
+  color: #FFC107;
 }
 
 
-/* PASSOS */
+/* PASSO A PASSO PARA ADOÇÃO */
 
 .processo-adocao {
   padding: 80px 20px;
   text-align: center;
+}
+
+.processo-adocao strong{
+  color: #FFC107;
 }
 
 .processo-adocao h2 {

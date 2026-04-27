@@ -4,8 +4,6 @@ body {
   background: #f5f5f5;
 }
 
-/* HEADER */
-
 header {
   position: fixed;
   top: 0;
@@ -177,8 +175,6 @@ header {
 }
 
 
-/* CONTAINER FLEX */
-
 .contato-container {
   display: flex;
   justify-content: center;
@@ -186,8 +182,6 @@ header {
   flex-wrap: wrap;
 }
 
-
-/* FORM */
 
 .form-contato {
   background: white;
@@ -219,8 +213,6 @@ textarea {
   height: 120px;
 }
 
-
-/* INFO CONTATO */
 
 .info-contato {
   background: white;
