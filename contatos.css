@@ -18,6 +18,9 @@ header {
   background: linear-gradient(135deg, #BFBF5E, #58692E);
   padding: 10px 40px;
 }
+.gatoContatos{
+   width: 150px;
+}
 
 .logo img {
   width: 90px;
