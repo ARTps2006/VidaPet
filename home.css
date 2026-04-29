@@ -11,6 +11,20 @@ header {
   z-index: 1000;
 }
 
+.imagem{
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem img{
+  margin-top: 25px;
+  margin-left: 210px;
+  width: 200px;
+  margin-right: 70px;
+  border: 3px solid #FFC107;
+  border-radius: 10px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
