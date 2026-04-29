@@ -16,13 +16,21 @@ header {
   flex-direction: column;
 }
 
+
 .imagem img{
-  margin-top: 25px;
-  margin-left: 210px;
-  width: 200px;
+  margin-top: 45px;
+  margin-left: 150px;
+  width: 250px;
   margin-right: 70px;
-  border: 3px solid #FFC107;
-  border-radius: 10px;
+}
+
+
+.imagem2 img{
+  margin-top: 45px;
+  margin-left: 150px;
+  width: 250px;
+  margin-right: 450px;
+
 }
 
 .menu {
