@@ -1,8 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
+  background-image: url("patas.png");
+  background-repeat: repeat;
+  background-size: 120px;
+  opacity: 0.98;
 }
+
+
+
+
 
 header {
   position: fixed;
@@ -11,13 +19,13 @@ header {
   z-index: 1000;
 }
 
-.imagem{
+.imagem {
   display: flex;
   flex-direction: column;
 }
 
 
-.imagem img{
+.imagem img {
   margin-top: 45px;
   margin-left: 150px;
   width: 250px;
@@ -25,7 +33,7 @@ header {
 }
 
 
-.imagem2 img{
+.imagem2 img {
   margin-top: 45px;
   margin-left: 150px;
   width: 250px;
@@ -195,6 +203,7 @@ header {
   padding: 100px 60px;
   background: white;
   border-top-left-radius: 120px;
+  border-bottom-left-radius: 120px;
   display: flex;
   justify-content: flex-end;
 }
@@ -382,6 +391,7 @@ header {
 .como-adotar h2 {
   color: #D56B1D;
 }
+
 .como-adotar {
   background: white;
   padding: 80px 20px;
@@ -408,7 +418,7 @@ header {
   color: #D56B1D;
 }
 
-.depoimentos h2{
+.depoimentos h2 {
   text-align: center;
   color: #d08c5c;
 }
@@ -479,4 +489,104 @@ header {
 .impacto-item h3 {
   font-size: 40px;
   margin-bottom: 10px;
+}
+
+.chat {
+  padding: 80px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+#lista-comentarios {
+  margin-bottom: 20px;
+}
+
+.comentario {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-comentario {
+  display: flex;
+  gap: 10px;
+}
+
+
+#input-comentario {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #BFBF5E;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#input-comentario:focus {
+  border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
+}
+
+#form-comentario button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #D56B1D, #d08c5c);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+#form-comentario button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+#form-comentario button:active {
+  transform: scale(0.95);
+}
+
+
+
+#form-comentario button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transition: all 0.6s;
+
+}
+
+
+#form-comentario button:hover::before {
+  left: 100%;
+  border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
 }

@@ -42,4 +42,42 @@ function anterior() {
 
     mostrarDepoimento();
 
+
+    const form = document.getElementById("form-comentario");
+    const input = document.getElementById("input-comentario");
+    const lista = document.getElementById("lista-comentarios");
+
+    // carregar comentários salvos
+    let comentarios = JSON.parse(localStorage.getItem("comentarios")) || [];
+
+    function renderizarComentarios() {
+        lista.innerHTML = "";
+
+        comentarios.forEach((comentario) => {
+            const div = document.createElement("div");
+            div.classList.add("comentario");
+            div.textContent = comentario;
+            lista.appendChild(div);
+        });
+    }
+
+    renderizarComentarios();
+
+    // adicionar novo comentário
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const texto = input.value.trim();
+
+        if (texto === "") return;
+
+        comentarios.push(texto);
+
+        localStorage.setItem("comentarios", JSON.stringify(comentarios));
+
+        input.value = "";
+
+        renderizarComentarios();
+    });
+
 }
