@@ -53,4 +53,13 @@ function cadastrar() {
     setTimeout(() => {
         window.location.href = "login.html";
     }, 2000);
+
+function perfil() {
+    window.location.href = "perfil.html"
+}
+
+function sair() {
+    window.location.href = "login.html"
+}
+
 }

@@ -82,19 +82,26 @@ header {
 
 
 .titulo {
-  margin-top: 120px;
+  margin-top: 100px;
+  padding: 120px 60px;
+  background: white;
   text-align: center;
-  padding: 60px 20px;
 }
 
-.titulo h1 {
-  font-size: 50px;
+.t1p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.t1p h1 {
   color: #D56B1D;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-.titulo p {
+.t1p p {
   font-size: 20px;
-  color: #555;
+  line-height: 1.6;
 }
 
 
@@ -117,7 +124,7 @@ header {
   border-radius: 15px;
   text-align: center;
 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 
   transition: 0.3s;
 }
@@ -144,8 +151,13 @@ header {
 }
 
 h2 {
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
   color: #58692E;
+}
+
+strong {
+  color: #FFC107;
 }
 
 
@@ -164,7 +176,7 @@ h2 {
 
   cursor: pointer;
 
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 
   transition: 0.3s;
 }
@@ -173,7 +185,7 @@ h2 {
 
   transform: translateY(-3px) scale(1.05);
 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
 

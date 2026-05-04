@@ -108,6 +108,7 @@ header {
 }
 
 .botao-mensagem {
+  margin-left: 80px;
   padding: 12px 30px;
   border: none;
   border-radius: 10px;
@@ -124,6 +125,7 @@ header {
   overflow: hidden;
 }
 
+
 /* efeito ao passar mouse */
 .botao-mensagem:hover {
   transform: translateY(-4px) scale(1.05);
@@ -135,10 +137,6 @@ header {
   transform: scale(0.95);
 }
 
-/* animação do ícone */
-.botao-mensagem:hover .icone {
-  transform: rotate(-20deg) scale(1.2);
-}
 
 /* brilho animado */
 
@@ -213,6 +211,12 @@ header {
   border: 1px solid #BFBF5E;
   border-radius: 5px;
   outline: none;
+  transition: 0.3s;
+}
+
+.form-contato input:hover{
+  border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
 }
 
 textarea {
@@ -220,6 +224,11 @@ textarea {
   height: 120px;
 }
 
+textarea:hover{
+   border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
+
+}
 
 .info-contato {
   background: white;

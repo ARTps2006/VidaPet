@@ -1,3 +1,11 @@
+function perfil() {
+    window.location.href = "perfil.html"
+}
+
+function sair() {
+    window.location.href = "login.html"
+}
+
 const form = document.querySelector(".form-contato");
 
 form.addEventListener("submit", function(event){
