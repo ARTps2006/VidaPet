@@ -8,6 +8,7 @@ body {
   opacity: 0.98;
 }
 
+
 header {
   position: fixed;
   top: 0;
@@ -21,9 +22,6 @@ header {
   align-items: center;
   background: linear-gradient(135deg, #BFBF5E, #58692E);
   padding: 10px 40px;
-}
-.gatoContatos{
-   width: 150px;
 }
 
 .logo img {
@@ -82,6 +80,133 @@ header {
   background: darkred;
 }
 
+/* FORMULÁRIO */
+
+.formulario-adocao {
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.form-adocao {
+  background: white;
+  width: 450px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-adocao h1 {
+  text-align: center;
+  color: #D56B1D;
+  margin-bottom: 10px;
+}
+
+.descricao-form {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.form-adocao label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  color: #58692E;
+  font-weight: bold;
+}
+
+.form-adocao input,
+.form-adocao select,
+.form-adocao textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #BFBF5E;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.form-adocao textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-adocao input:focus,
+.form-adocao select:focus,
+.form-adocao textarea:focus {
+  border-color: #D56B1D;
+  box-shadow: 0 0 5px rgba(213, 107, 29, 0.4);
+}
+
+.botao-acao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 105px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  padding: 12px 40px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(1235deg, #D56B1D, #d08c5c);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* efeito ao passar mouse */
+.botao-acao:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* clique */
+.botao-acao:active {
+  transform: scale(0.95);
+}
+
+/* brilho animado */
+
+.botao-acao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+  transition: all 0.6s;
+}
+
+.botao-acao:hover::before {
+  left: 100%;
+}
+
+
+.imagem-formulario img {
+  margin-left: 130px;
+  width: 190px;
+}
+
 /* RODAPÉ */
 
 .rodape {
@@ -105,156 +230,4 @@ header {
   text-align: center;
   margin-top: 20px;
   color: #aaa;
-}
-
-.botao-mensagem {
-  margin-left: 80px;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #D56B1D, #d08c5c);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-
-/* efeito ao passar mouse */
-.botao-mensagem:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-}
-
-/* clique */
-.botao-mensagem:active {
-  transform: scale(0.95);
-}
-
-
-/* brilho animado */
-
-.botao-mensagem::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent);
-  transition: all 0.6s;
-}
-
-.botao-mensagem:hover::before {
-  left: 100%;
-}
-
-
-
-/* CONTAINER */
-
-.contato {
-  padding-top: 120px;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.contato h1 {
-  font-size: 45px;
-  color: #D56B1D;
-  margin-bottom: 10px;
-}
-
-.descricao {
-  font-size: 18px;
-  margin-bottom: 50px;
-}
-
-
-.contato-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-
-.form-contato {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  width: 350px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  text-align: left;
-}
-
-.form-contato label {
-  color: #D56B1D;
-  font-weight: bold;
-}
-
-.form-contato input,
-.form-contato textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #BFBF5E;
-  border-radius: 10px;
-  outline: none;
-  transition: 0.3s;
-  font-size: 15px;
-}
-
-/* quando clicar */
-
-.form-contato input:focus,
-.form-contato textarea:focus {
-  border-color: #D56B1D;
-  box-shadow: 0 0 5px rgba(213, 107, 29, 0.4);
-}
-
-textarea {
-  resize: none;
-  height: 120px;
-}
-
-textarea:hover{
-   border-color: #D56B1D;
-  box-shadow: 0 0 5px rgba(160, 170, 96, 0.4);
-
-}
-
-.info-contato {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  width: 300px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  text-align: left;
-}
-
-.info-contato h3 {
-  color: #D56B1D;
-  margin-bottom: 10px;
-}
-
-
-/* RODAPÉ */
-
-.rodape {
-  margin-top: 80px;
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }

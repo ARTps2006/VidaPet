@@ -165,10 +165,6 @@ header {
   transform: scale(0.95);
 }
 
-/* animação do ícone */
-.botao-acao:hover .icone {
-  transform: rotate(-20deg) scale(1.2);
-}
 
 /* brilho animado */
 

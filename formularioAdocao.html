@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animais - VidaPet</title>
+    <title>Formulario - VidaPet</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="logo VidaPet.png">
-    <link rel="stylesheet" href="animais.css">
+    <link rel="stylesheet" href="formularioAdocao.css">
 
 </head>
 
@@ -47,80 +47,61 @@
 
     </header>
 
-    <main>
+    <main class="formulario-adocao">
 
-        <section class="titulo">
+        <div class="container-formulario">
 
-            <div class="t1p">
-                <h1>Animais para Adoção</h1>
+            <form class="form-adocao">
 
-                <p>Conheça alguns dos <strong>animais</strong> que estão esperando por um lar cheio de <strong>amor</strong>.</p>
-                <br><br>
-            </div>
-            
-        </section>
-        <h2>Cachorros</h2>
+                <div class="imagem-formulario">
+            <img src="gatoEcachorroFormulario.png">
+        </div>
         
+                <h1>Formulário de Adoção</h1>
 
-        <section class="animais">
+                <p class="descricao-form">
+                    Preencha as informações abaixo para iniciar o processo de adoção.
+                </p>
 
-            <div class="animais-container">
+                <label>Nome completo</label>
+                <input type="text" placeholder="Digite seu nome: ">
 
+                <label>Email</label>
+                <input type="email" placeholder="Digite seu email: ">
 
-                <div class="animal-card">
+                <label>Telefone</label>
+                <input type="tel" placeholder="Digite seu telefone: ">
 
-                    <img src="cachorro1.jpg">
+                <label>Idade</label>
+                <input type="number" placeholder="Digite sua idade: ">
 
-                    <h3>Thor</h3>
+                <label>Animal escolhido</label>
 
-                    <p>2 anos • Muito brincalhão</p>
+                <input type="text" placeholder="Digite o nome do animal: ">
 
-                    <button>Adotar</button>
+                <label>Você mora em:</label>
 
-                </div>
+                <select>
+                    <option>Casa</option>
+                    <option>Apartamento</option>
+                </select>
 
+                <label>Possui outros animais?</label>
 
-                <div class="animal-card">
+                <select>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
 
-                    <img src="CachorroLuna.jpg">
+                <label>Por que deseja adotar?</label>
 
-                    <h3>Luna</h3>
+                <textarea placeholder="Digite sua mensagem: "></textarea>
 
-                    <p>2 ano • Muito carinhosa</p>
+                <button class="botao-acao" type="submit">
+                    Enviar formulário
+                </button>
 
-                    <button>Adotar</button>
-
-                </div>
-
-
-                <div class="animal-card">
-
-                    <img src="CachorroMax.jpg">
-
-                    <h3>Max</h3>
-
-                    <p>3 anos • Muito fiel</p>
-
-                    <button>Adotar</button>
-
-                </div>
-
-
-                <div class="animal-card">
-
-                    <img src="cachorroMel.jpg">
-
-                    <h3>Mel</h3>
-
-                    <p> 3 anos • Muito tranquila</p>
-
-                    <button>Adotar</button>
-
-                </div>
-
-            </div>
-
-        </section>
+            </form>
 
     </main>
 
@@ -154,10 +135,6 @@
     </footer>
 
 </body>
-
-</html>
-
-</body>
-<script src="animais.js"></script>
+<script src="formularioAdocao.js"></script>
 
 </html>

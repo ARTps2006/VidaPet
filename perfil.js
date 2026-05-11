@@ -1,3 +1,11 @@
+ function perfil() {
+    window.location.href = "perfil.html";
+}
+
+function sair() {
+    window.location.href = "login.html";
+}
+
 let usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
 if (usuarioLogado) {
