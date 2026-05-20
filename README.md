@@ -58,6 +58,7 @@ O objetivo do VidaPet é utilizar tecnologia para ajudar animais e incentivar a 
 
 # 👨‍💻 Autores
 
-Arthur Pessoa da Silva - Front-end
+* Arthur Pessoa da Silva - Front-end
+* Guilherme Nobres de Souza - Back-end
 Guilherme Nobres de Souza - Back-end
 Caso queira contribuir com melhorias no projeto, fique à vontade para abrir issues ou enviar pull requests.
