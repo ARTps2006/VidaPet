@@ -11,6 +11,11 @@ function animais(){
 
 }
 
+function sobre(){
+            window.location.href = "sobre.html";
+
+}
+
 let indice = 0;
 const depoimentos = document.querySelectorAll(".depoimento");
 
