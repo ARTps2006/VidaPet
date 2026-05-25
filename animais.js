@@ -5,3 +5,7 @@ function perfil() {
 function sair() {
     window.location.href = "login.html"
 }
+
+function formulario() {
+    window.location.href = "formularioAdocao.html"
+}

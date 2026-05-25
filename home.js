@@ -6,6 +6,11 @@ function sair() {
     window.location.href = "login.html";
 }
 
+function animais(){
+        window.location.href = "animais.html";
+
+}
+
 let indice = 0;
 const depoimentos = document.querySelectorAll(".depoimento");
 
